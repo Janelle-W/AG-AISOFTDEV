@@ -7,6 +7,8 @@ from .settings import display, Markdown
 
 # --- Model & Provider Configuration ---
 RECOMMENDED_MODELS: Dict[str, Dict[str, Any]] = {
+    # Preferred image generation model for Day 8 Lab
+    "stabilityai/stable-diffusion-xl-base-1.0": {"provider": "huggingface", "vision": False, "text_generation": False, "image_generation": True, "image_modification": False, "audio_transcription": False, "context_window_tokens": None, "output_tokens": None},
     "gpt-5-nano-2025-08-07": {"provider": "openai", "vision": True, "text_generation": True, "image_generation": False, "image_modification": False, "audio_transcription": False, "context_window_tokens": 400_000, "output_tokens": 128_000},
     "gpt-5-mini-2025-08-07": {"provider": "openai", "vision": True, "text_generation": True, "image_generation": False, "image_modification": False, "audio_transcription": False, "context_window_tokens": 400_000, "output_tokens": 128_000},
     "gpt-5-2025-08-07": {"provider": "openai", "vision": True, "text_generation": True, "image_generation": False, "image_modification": False, "audio_transcription": False, "context_window_tokens": 400_000, "output_tokens": 128_000},
@@ -23,6 +25,9 @@ RECOMMENDED_MODELS: Dict[str, Dict[str, Any]] = {
     "claude-opus-4-20250514": {"provider": "anthropic", "vision": True, "text_generation": True, "image_generation": False, "image_modification": False, "audio_transcription": False, "context_window_tokens": 200_000, "output_tokens": 100_000},
     "claude-sonnet-4-20250514": {"provider": "anthropic", "vision": True, "text_generation": True, "image_generation": False, "image_modification": False, "audio_transcription": False, "context_window_tokens": 1_000_000, "output_tokens": 100_000},
     "gemini-2.5-pro": {"provider": "google", "vision": True, "text_generation": True, "image_generation": False, "image_modification": False, "audio_transcription": False, "context_window_tokens": 1_048_576, "output_tokens": 65_536},
+    "gemini-2.5-flash-text": {"provider": "google", "vision": True, "text_generation": True, "image_generation": False, "image_modification": False, "audio_transcription": False, "context_window_tokens": 1_048_576, "output_tokens": 65_536},
+    "gemini-2.5-flash-image": {"provider": "google", "vision": True, "text_generation": False, "image_generation": True, "image_modification": False, "audio_transcription": False, "context_window_tokens": 1_048_576, "output_tokens": 65_536},
+    "gemini-2.5-image-edit": {"provider": "google", "vision": True, "text_generation": False, "image_generation": False, "image_modification": True, "audio_transcription": False, "context_window_tokens": 1_048_576, "output_tokens": 65_536},
     "gemini-2.5-flash": {"provider": "google", "vision": True, "text_generation": True, "image_generation": False, "image_modification": False, "audio_transcription": False, "context_window_tokens": 1_048_576, "output_tokens": 65_536},
     "gemini-2.5-flash-lite": {"provider": "google", "vision": True, "text_generation": True, "image_generation": False, "image_modification": False, "audio_transcription": False, "context_window_tokens": 1_048_576, "output_tokens": 65_536},
     "gemini-live-2.5-flash-preview": {"provider": "google", "vision": False, "text_generation": False, "image_generation": False, "image_modification": False, "audio_transcription": False, "context_window_tokens": 1_048_576, "output_tokens": 8_192},
@@ -42,6 +47,7 @@ RECOMMENDED_MODELS: Dict[str, Dict[str, Any]] = {
     "Qwen/Qwen-Image": {"provider": "huggingface", "vision": False, "text_generation": False, "image_generation": True, "image_modification": False, "audio_transcription": False, "context_window_tokens": None, "output_tokens": None},
     "Qwen/Qwen-Image-Edit": {"provider": "huggingface", "vision": False, "text_generation": False, "image_generation": False, "image_modification": True, "audio_transcription": False, "context_window_tokens": None, "output_tokens": None},
     "stabilityai/stable-diffusion-3.5-large": {"provider": "huggingface", "vision": False, "text_generation": False, "image_generation": True, "image_modification": False, "audio_transcription": False, "context_window_tokens": None, "output_tokens": None},
+    "stabilityai/stable-diffusion-xl-base-1.0": {"provider": "huggingface", "vision": False, "text_generation": False, "image_generation": True, "image_modification": False, "audio_transcription": False, "context_window_tokens": None, "output_tokens": None},
     "black-forest-labs/FLUX.1-Kontext-dev": {"provider": "huggingface", "vision": False, "text_generation": False, "image_generation": False, "image_modification": True, "audio_transcription": False, "context_window_tokens": None, "output_tokens": None},
 }
 
