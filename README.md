@@ -10,7 +10,7 @@ Whether you are self-paced or teaching in a classroom, this README explains how 
 
 ---
 
-## 📦 Repository Layout
+## Repository Layout
 
 | Path | Description |
 | --- | --- |
@@ -43,7 +43,7 @@ Daily goals, labs, and artifacts live in each `Labs/Day_*` README; skim those su
 
 ---
 
-## ⚙️ Getting Started
+## Getting Started
 
 ### 1. Prerequisites
 
@@ -117,7 +117,7 @@ Each lab notebook imports from the `utils` package. If you run a notebook from a
 
 ---
 
-## 🧰 Working with the `utils` Package
+## Working with the `utils` Package
 
 The `utils` package consolidates course-wide helpers. Key modules include:
 
@@ -149,7 +149,7 @@ To parallelise prompts, pair `async_setup_llm_client()` with `async_get_completi
 
 ---
 
-## 🧪 Testing and Quality Gates
+## Testing and Quality Gates
 
 * **Unit tests:** `pytest tests` exercises artifact helpers, logging, HTTP wrappers, and synchronous compatibility shims without leaving your machine.
 * **Async coverage:** `pytest async_tests` verifies concurrency helpers.
@@ -160,7 +160,7 @@ Before shipping new utilities or course assets, run the fast suite locally and e
 
 ---
 
-## 📚 Supporting Documentation
+## Supporting Documentation
 
 The `Supporting Materials/` directory contains detailed guides that extend this README:
 
@@ -175,7 +175,7 @@ Each document has been refreshed to match the utilities and lab artifacts in thi
 
 ---
 
-## 🤝 Contributing & Classroom Usage
+## Contributing & Classroom Usage
 
 This repository is primarily used in a facilitated training environment. When proposing improvements:
 
@@ -192,7 +192,7 @@ For classroom delivery, instructors typically:
 
 ---
 
-## 📄 License & Support
+## License & Support
 
 * **License:** These materials are licensed for classroom use by Digital Ethos Academy cohorts. If you need clarification on redistribution rights, contact your program coordinator before sharing content outside your organization.
 * **Support:**
