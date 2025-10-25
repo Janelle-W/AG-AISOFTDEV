@@ -29,7 +29,7 @@ Whether you are self-paced or teaching in a classroom, this README explains how 
 
 ---
 
-## 🎯 Program Outcomes
+## Program Outcomes
 
 By the end of the program learners will be able to:
 
