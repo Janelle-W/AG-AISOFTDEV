@@ -1,5 +1,13 @@
 # AI-Driven Software Engineering Program
 
+---
+
+### Personal Note
+This repository contains **my completed labs, exercises, and project work** from the **Digital Ethos Academy AI-Driven Software Engineering Program**.  
+Everything below this section is part of the original instructor-provided README.
+
+---
+
 Welcome to the Digital Ethos Academy AI-Driven Software Engineering Program. This 10-day intensive curriculum shows software engineers how to weave large language models (LLMs) into every phase of the software development lifecycle (SDLC). The repository is the single source of truth for:
 
 * daily lab notebooks and reference solutions,
